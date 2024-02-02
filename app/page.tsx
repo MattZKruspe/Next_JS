@@ -1,6 +1,8 @@
+import styles from '@/app/ui/home.module.css';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { Lusitana } from 'next/font/google';
 
 export default function Page() {
   return (
@@ -16,6 +18,12 @@ export default function Page() {
               Next.js Learn Course
             </a>
             , brought to you by Vercel.
+            <div
+  className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
+/>
+
+<div className={styles.shape} />
+
           </p>
           <Link
             href="/login"
