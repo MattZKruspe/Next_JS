@@ -18,9 +18,8 @@ export default function Page() {
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
               Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-            <AcmeLogo />
+            </a>, brought to you by Vercel.
+            {/* <AcmeLogo /> */}
             {/* ---------- */}
 
 <div className={styles.shape} />
@@ -47,7 +46,8 @@ export default function Page() {
             src="/hero-mobile.png"
             width={560}
             height={620}
-            alt='Mobil'
+            className='hidden md:block'
+            alt='Screenshot of dasboard project showing mobil version'
           />
         </div>
       </div>
